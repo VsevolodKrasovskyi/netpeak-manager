@@ -1,0 +1,47 @@
+[
+    {
+        "slug": "netpeak-logger",
+        "name": "Netpeak Logger",
+        "description": "CDN-enhanced analytics tool",
+        "version": "1.2.0",
+        "icon": "https://i.pinimg.com/474x/0c/a4/92/0ca492f26ea2c8e07eff13713b6154ea.jpg",
+        "dependencies": [],
+        "requires_wp": "6.2.2",
+        "requires_php": "7.4",
+        "repository": "https://github.com/VsevolodKrasovskyi/netpeak-tools/zipball/prod"
+
+    },
+    {
+        "slug": "hello",
+        "name": "Hello Dolly",
+        "description": "Utility functions shared across Netpeak plugins",
+        "version": "1.0.0",
+        "icon": "https://i.pinimg.com/736x/5d/e6/b5/5de6b5f4241c01458adba501f8ddcb65.jpg",
+        "dependencies": [],
+        "requires_wp": "6.2.2",
+        "requires_php": "7.4",
+        "repository": "https://github.com/WordPress/hello-dolly/zipball/master"
+    },
+    {
+        "slug": "netpeak-tools",
+        "name": "Netpeak Tools",
+        "description": "ета кабута он пает",
+        "version": "1.0.11",
+        "icon": "https://i.pinimg.com/736x/45/1d/2b/451d2b9675f3260bc1227cf4b3af791e.jpg",
+        "dependencies": [],
+        "requires_wp": "6.6.2",
+        "requires_php": "7.4",
+        "repository": "https://github.com/netpeak/plugin-1"
+    },
+    {
+        "slug": "plugin-2",
+        "name": "Core Helper",
+        "description": "Utility functions shared across Netpeak plugins",
+        "version": "1.0.0",
+        "icon": "https://i.pinimg.com/736x/fd/7c/50/fd7c505baf6e16cb002f9fb8da6ffdca.jpg",
+        "dependencies": ["hello-dolly"],
+        "requires_wp": "6.2.2",
+        "requires_php": "7.4",
+        "repository": "https://github.com/netpeak/plugin-1"
+    }
+]

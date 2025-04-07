@@ -1,0 +1,35 @@
+{
+    "name": "netpeak/netpeak-manager",
+    "description": "Manager of Netpeak plugins.",
+    "keywords": ["wordpress", "tools", "netpeak", "seo"],
+    "license": "proprietary",
+    "homepage": "https://cdn.netpeak.dev/",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Netpeak\\": "inc/",
+            "UI\\": "ui/"
+            
+        }
+    },
+    "authors": [
+        {
+            "name": "Masik",
+            "email": "v.krasovskyi@netpeak.dev",
+            "role": "Developer",
+            "homepage": "https://gravatar.com/vkrasovskyi"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+
+    "extra": {
+        "subscription": {
+            "model": "paid",
+            "billing": ["monthly", "annual"],
+            "activation_required": true
+        }
+    }
+
+}

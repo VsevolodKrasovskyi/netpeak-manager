@@ -1,0 +1,95 @@
+#auth-form, #license-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.license-title
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.form-license {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+#auth-form input[type="email"],
+#auth-form input[type="password"],
+#license-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#auth-submit,
+#license-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#auth-submit:hover,
+#license-submit:hover {
+    background-color: #005983;
+}
+
+#response {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+p.status-cdn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+p.status-cdn.success-status {
+    background-color: #e0f7e9;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+
+p.status-cdn.error-status {
+    background-color: #fce8e6;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+
+p.status-cdn {
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
