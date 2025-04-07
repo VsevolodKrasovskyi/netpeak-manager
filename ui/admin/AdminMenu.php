@@ -2,6 +2,8 @@
 
 namespace UI\Admin;
 
+use \Netpeak\PluginRepository;
+
 class AdminMenu {
     public static function register() {
         add_action('admin_menu', [self::class, 'addMenuItems']);
@@ -23,7 +25,7 @@ class AdminMenu {
             return;
         }
     
-        $plugins = \Netpeak\PluginRepository::getAvailablePlugins();
+        $plugins = PluginRepository::getAvailablePlugins();
         foreach ($plugins as $plugin) {
             $slug = sanitize_title($plugin['slug']);
             $title = $plugin['name'] ?? ucfirst($slug);
@@ -70,8 +72,6 @@ class AdminMenu {
             'netpeak_plugins_label',
             '__return_false'
         );
-        
-        
 
         self::registerDynamicPluginPages();
     }

@@ -23,7 +23,7 @@ class CDN {
         return self::$instance;
     }
     private function __clone() {}
-    public  function __wakeup() {
+    public function __wakeup() {
         throw new \Exception("Cannot unserialize a singleton.");
     }
 

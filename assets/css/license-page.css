@@ -60,7 +60,7 @@
 }
 
 p.status-cdn {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     padding: 10px;
     border-radius: 8px;
@@ -73,7 +73,7 @@ p.status-cdn {
 
 p.status-cdn.success-status {
     background-color: #e0f7e9;
-    color: #2ecc71;
+    color: #006400;
     border: 1px solid #2ecc71;
 }
 

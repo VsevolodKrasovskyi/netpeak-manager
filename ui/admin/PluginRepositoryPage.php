@@ -7,6 +7,10 @@ use Netpeak\PluginRepository;
 class PluginRepositoryPage {
     public static function render() {
         $plugins = PluginRepository::getAvailablePlugins();
+        if (is_string($plugins)) {
+            echo '<div class="error"><p>' . esc_html($plugins) . '</p></div>';
+            return;
+        }
         ?>
         <div class="wrap">
             <h1><?php _e('Available Netpeak Plugins', 'netpeak-seo'); ?></h1>

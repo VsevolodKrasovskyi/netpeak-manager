@@ -88,6 +88,7 @@ async function validateLicense(authToken, licenseKey) {
             if (responseElement) responseElement.innerHTML = `<p class="status-cdn success-status">${data.message}<br/>Expires on: ${data.expires_date || 'Lifetime'}</p>`;
             enableLicensedFeatures();
         } else {
+            showError(data.message);
             showAuthForm();
             disableLicensedFeatures();
         }
@@ -126,7 +127,7 @@ async function login(event) {
             EMAIL = email;
             PASSWORD = password;
             AUTH_TOKEN = data.token;
-            showSuccess(data.message);
+            showSuccess(data.message || "Login successful.");
             showLicenseForm();
         } else {
             showError(data.message || "Login failed.");
