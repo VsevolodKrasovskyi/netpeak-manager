@@ -38,8 +38,8 @@ if (file_exists(NETPEAK_PLUGIN_DIR . '/vendor/autoload.php')) {
 }
 
 require_once NETPEAK_PLUGIN_DIR . '/init.php';
-use Netpeak\LicenseManager;
-use Netpeak\CDN;
+use NetpeakManager\LicenseManager;
+use NetpeakManager\CDN;
 use UI\Admin\AdminMenu;
 
 add_action('admin_init', [LicenseManager::class, 'init']);

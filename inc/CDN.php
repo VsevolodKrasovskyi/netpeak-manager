@@ -1,6 +1,6 @@
 <?php
 
-namespace Netpeak;
+namespace NetpeakManager;
 
 class CDN {
     private static $instance;

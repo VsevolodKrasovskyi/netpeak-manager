@@ -2,7 +2,7 @@
 
 namespace UI\Admin;
 
-use \Netpeak\PluginRepository;
+use NetpeakManager\PluginRepository;
 
 class AdminMenu {
     public static function register() {
@@ -21,7 +21,7 @@ class AdminMenu {
     }
 
     private static function registerDynamicPluginPages() {
-        if (!class_exists('\Netpeak\PluginRepository')) {
+        if (!class_exists('\NetpeakManager\PluginRepository')) {
             return;
         }
     

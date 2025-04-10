@@ -1,9 +1,7 @@
 <?php
 
 
-namespace Netpeak;
-
-
+namespace NetpeakManager;
 class LicenseManager
 {
     public static function init()

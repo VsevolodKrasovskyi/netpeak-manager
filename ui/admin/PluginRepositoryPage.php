@@ -2,7 +2,7 @@
 
 namespace UI\Admin;
 
-use Netpeak\PluginRepository;
+use NetpeakManager\PluginRepository;
 
 class PluginRepositoryPage {
     public static function render() {

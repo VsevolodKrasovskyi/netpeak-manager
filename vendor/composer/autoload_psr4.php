@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'UI\\' => array($baseDir . '/ui'),
-    'Netpeak\\' => array($baseDir . '/inc'),
+    'NetpeakManager\\' => array($baseDir . '/inc'),
 );

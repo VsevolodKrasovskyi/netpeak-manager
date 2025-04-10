@@ -13,7 +13,7 @@ class ComposerStaticInitfff4296c8d82997cfe5e3d81550afc56
         ),
         'N' => 
         array (
-            'Netpeak\\' => 8,
+            'NetpeakManager\\' => 15,
         ),
     );
 
@@ -22,7 +22,7 @@ class ComposerStaticInitfff4296c8d82997cfe5e3d81550afc56
         array (
             0 => __DIR__ . '/../..' . '/ui',
         ),
-        'Netpeak\\' => 
+        'NetpeakManager\\' => 
         array (
             0 => __DIR__ . '/../..' . '/inc',
         ),

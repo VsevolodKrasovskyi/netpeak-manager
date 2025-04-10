@@ -4,10 +4,10 @@
     "keywords": ["wordpress", "tools", "netpeak", "seo"],
     "license": "proprietary",
     "homepage": "https://cdn.netpeak.dev/",
-    "type": "project",
+    "type": "wp-plugin",
     "autoload": {
         "psr-4": {
-            "Netpeak\\": "inc/",
+            "NetpeakManager\\": "inc/",
             "UI\\": "ui/"
             
         }

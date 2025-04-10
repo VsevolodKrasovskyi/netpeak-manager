@@ -1,6 +1,6 @@
 <?php
 
-namespace Netpeak;
+namespace NetpeakManager;
 
 class PluginRepository {
     public static function getAvailablePlugins() {
